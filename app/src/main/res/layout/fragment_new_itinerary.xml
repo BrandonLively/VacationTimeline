@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="10dp"
+             android:padding="10dp"
+             tools:context=".CreateItineraryDialogFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:textSize="24dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:text="Setup New Trip"/>
+
+        <EditText
+                android:id="@+id/et_new_trip_destination"
+                android:hint="Where are you going?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:id="@+id/et_new_trip_time"
+                android:hint="When are you going?"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:inputType="date"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <Button
+                    android:id="@+id/btn_new_trip_cancel"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/material_red_600"
+                    android:textColor="@color/material_light_white"
+                    android:text="back"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <Button
+                    android:id="@+id/btn_new_trip_confirm"
+                    android:layout_weight="1"
+                    android:textColor="@color/material_light_white"
+                    android:text="Save"
+                    android:backgroundTint="@color/material_green_700"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
